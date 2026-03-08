@@ -1,0 +1,5 @@
+datasets/
+fsoco_segmentation_train/
+yolo_fsoco/
+runs/
+**/*.pt
