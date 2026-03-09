@@ -10,6 +10,7 @@ def train_model(args):
         imgsz=args.resolution,
         project=args.project,
         patience=args.patience,
+        batch=args.batch,
     )
 
 
@@ -18,6 +19,7 @@ if __name__ == "__main__":
         "train a YOLO model via the awesome (!!) ultralytics library"
     )
     parser.add_argument("--model", type=str, default="yolo26n-seg")
+    parser.add_argument("--batch", type=int, default=16)
     parser.add_argument("--epochs", type=int, default=50)
     parser.add_argument(
         "--patience",
